@@ -2,27 +2,32 @@
     margin: 0%;
     padding: 0%;
 }
-header{
-    position: absolute !important;
-    width: 4.8rem;
-    background-color: white;
-    padding-left: 5px !important;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-}
-h1{
-    padding-left: 15px;
-    font-weight: 600;
-    /* font-size: .875rem;
-    line-height: 1.25rem; */
-}
-main{
-    width: 4.8rem;
-    background-color: white;
-}
+
 .footer-bottom{
     background-color: black;
     width: 100%;
     height: 600px;
+}
+.main-wrapper{
+    position: absolute;
+    width: 75%;
+}
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.02) 0.44%, rgba(0, 0, 0, 0) 49.5%),#ffffff
+}
+.link-container{
+    display: flex;
+    gap: 2rem;
+}
+.link{
+    &:hover{
+        color: grey;
+    }
+}
+.logo{
+    width: 70px;
+    height:--webkit-fill-available;
 }
