@@ -10,11 +10,10 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #fff;
       color: #333;
     }
     .container {
-      margin: 20px auto;
       padding: 20px;
       background: #fff;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -31,10 +30,54 @@
       color: #27ae60;
       font-weight: bold;
     }
+    .main-wrapper{
+    width: 75%;
+}
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.02) 0.44%, rgba(0, 0, 0, 0) 49.5%),#ffffff
+}
+.link-container{
+    display: flex;
+    gap: 2rem;
+}
+.link{
+    &:hover{
+        color: grey;
+    }
+}
+.logo{
+    width: 70px;
+    height:--webkit-fill-available;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
   </style>
 </head>
 <body>
-    
+    <main class="main-wrapper">
+    <header>
+        <nav class="nav-wrapper">
+          <div class="logo-wrapper">
+            <a href="./index.html"><img src="./assets/medcore.png" class="logo" alt=""></a>
+            
+          </div>
+          <div class="link-wrapper">
+          <ul class="link-container">
+            <li class="link"><a href="./about.html">About</a></li>
+            <li class="link"><a href="./services.html">Services</a></li>
+          </ul>
+        </div>
+        </nav>
+      </header>
+    </main>
   <div class="container">
     <h1>About Us – Your Mental Health Companion</h1>
     <p>Welcome to <span class="highlight">Med Core</span>, your trusted mental health companion designed to listen, understand, and guide you through life’s challenges. We’re here to provide a safe, supportive, and non-judgmental space where you can explore your feelings, gain insights, and find resources to help you manage your mental well-being.</p>
